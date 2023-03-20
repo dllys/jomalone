@@ -1,0 +1,66 @@
+@media screen and (max-width:1023px){
+    #header .inner {width: 98%;}
+    #header h1 {
+        top: 20px; 
+    }
+
+    #header .top-menu {
+        right: 40px; 
+        top: 0;
+    }
+    #header .top-menu .search p {width: 200px;}
+
+    #header .nav {position: fixed; right: -65%; top: 0; width: 60%; height: 100vh; background: #f8f8ff; z-index: 100; transition: 0.4s;}
+    #header .nav.on {right: 0;}
+    #header .nav .gnb {flex-wrap: wrap; padding-top: 10rem;}
+    #header .nav .gnb li {width: 100%;}
+    #header .nav .gnb li a {line-height: 8rem; text-align: center; box-sizing: border-box; padding: 0; border-bottom: 1px solid #dcdcdc;}
+    #header .all-menu {display: block;}
+
+
+
+
+    /* .main .con1 .inner {width: 95%;}
+    .main .con1 ul li a div {padding-top: 8rem;}
+    .main .con1 ul li a div h2 {font-size: 3.5rem; margin-bottom: 1.5rem;}
+    .main .con1 ul li a div p {font-size: 2rem;}
+
+
+    .main .con2 .inner {width: 95%;}
+    .main .con2 .inner h2 {font-size: 3rem;}
+    .main .con2 .inner ul li {width: 100%;}
+    .main .con2 .inner ul li img {width: 100%;}
+    .main .con2 .inner ul li:last-child {display: none;}
+
+    .main .con3 .inner {width: 95%;}
+
+    .main .con4 .inner {width: 67%; padding: 10rem 0; flex-wrap: wrap;}
+    .main .con4 .left {width: 100%; text-align: center; margin-bottom: 8rem;}
+    .main .con4 ul {width: 100%; }
+    .main .con4 ul li {width: 18.8889vw;}
+    .main .con4 ul li a { height: 17.7778vw;}
+    .main .con4 ul li a span {height: 11.1111vw; padding-top: 4.4444vw;}
+    .main .con4 ul li a span img {width: 5.5556vw; }
+    .main .con4 ul li a strong {font-size: 2.2222vw;} */
+
+}
+
+
+/* 모바일은 rem으로 변환해도 되고 vw로 변환해도 된다 */
+@media screen and (max-width:767px){
+    #header .nav {right: -85%; width: 80%;}
+    #header .nav .gnb li a {line-height: 6rem;}
+
+    .main .con1 ul {display: block;}
+    .main .con1 ul li {width: 100%; height: 19.5567vw; overflow: hidden; margin-bottom: 1.5rem;}
+    .main .con1 ul li a img {width: 100%;}
+    .main .con1 ul li:nth-child(1) a img {margin-top: -40rem;}
+    .main .con1 ul li:nth-child(2) a img {margin-top: -30rem;}
+    .main .con1 ul li:nth-child(3) a img {margin-top: -25rem;}
+    /* position:absolute 라서 높이 인식이 안된다 (한 번 더 넣어주기) */
+    .main .con1 ul li a div {display: flex; justify-content: center; align-items: center; padding-top: 0; height: 19.5567vw;}
+    .main .con1 ul li a div h2 {margin-bottom: 0;}
+    .main .con1 ul li a div p {display: none; }
+
+    
+}
