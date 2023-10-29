@@ -541,16 +541,20 @@
     }
 
     #footer .foot1 {
-        width: 90%;
+        width: 100%;
         margin-bottom: 3rem;
+        display: flex;
+        justify-content: center;
     }
 
     #footer .foot1 .list {
         flex-direction: row;
+        justify-content: space-around;
     }
 
     #footer .foot1 .list > li {
         margin-bottom: 0rem;
+        width: 12rem;
     }
 
     #footer .foot2 p {
