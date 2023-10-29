@@ -1,0 +1,140 @@
+/* COMMON */
+#wrap {width: 100%; min-width: 1600px;}
+.inner {width: 1400px; margin: auto; position: relative; box-sizing: border-box;}
+
+#header {
+    width: 100%;
+    position: absolute;
+    left: 0; top: 0;
+}
+#header .inner {height: 140px;}
+
+#header h1 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+#header h1 img {width: 190px; height: 50px;}
+#header .top-menu {
+    display: flex;
+    position: absolute; 
+    right: 0; top: 75px;
+}
+#header .top-menu li {margin-left: 30px;}
+#header .top-menu li:first-child {margin-left: 0;}
+#header .top-menu li img {
+    width: 25px; height: 25px;
+}
+#header .top-menu .search {
+    position: absolute;
+    right: 89px; top: -12px;
+}
+
+#header .top-menu .search p {
+    width: 250px; height: 50px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    position: relative;
+}
+
+#header .top-menu .search p input {
+    width: 150px; height: 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: transparent;
+    position: absolute; 
+    left: 20px; top: 50%;
+    transform: translateY(-50%);
+}
+
+#header .all-menu{
+    width: 35px; height: 30px;  
+    margin: 40px; padding: 5px; 
+    overflow: hidden; 
+    position: relative; 
+    cursor: pointer; 
+    display: none;}    
+#header .all-menu span{
+    display: block;  
+    width: 35px; height: 2px;
+    background-color: #333;
+    position: absolute; left: 0;
+    transition: 0.3s;}   
+#header .all-menu .line01{ top: 1px; }
+#header .all-menu .line02{ top: 13px; }
+#header .all-menu .line03{ top: 25px; }
+
+#header .all-menu.active .line02{ transform: scaleX(0); }
+#header .all-menu.active .line01{
+    transform: rotate(45deg);
+    transform-origin: left top; 
+    left: 5px; 
+}
+#header .all-menu.active .line03{
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+    left: 5px; 
+}
+
+#header .nav .gnb {
+    display: flex;
+    position: absolute;
+    left: 0; top: 80px;
+}
+
+#header .nav .gnb > li {margin-left: 60px; font-size: 17px; position: relative;}
+#header .nav .gnb > li::after {
+    display: none; content: "";
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    right: -10px; top: 0;
+    transition: 0.4s;
+}
+
+
+#header .nav .gnb > li:hover::after {display: block;}
+
+#header .nav .gnb li:first-child {margin-left: 0;}
+#header .nav .gnb li > ul {
+    position: absolute;
+    top: 40px;
+    background: #000;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#header .nav .gnb li:nth-of-type(1) > ul {
+    width: 150px; height: 245px; 
+    left: -45px;
+}
+
+#header .nav .gnb li:nth-of-type(3) > ul {
+    width: 180px; height: 15px; 
+    left: -20px;
+}
+
+
+
+
+#header .nav .gnb li > ul > li {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#header .nav .gnb li > ul > li:first-child {margin-top: 14px;}
+
+#header .nav .gnb li > ul > li:hover a {
+    color: #9E9E9E;
+}
+
+#header .nav .gnb li > ul > li:last-child {margin-bottom: 0;}
+
+#header .nav .gnb li > ul > li > a {
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+
+
+
